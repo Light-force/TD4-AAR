@@ -1,0 +1,1 @@
+insert into UFR(sigleUFR) VALUES ('Sciences & Techniques');
