@@ -23,4 +23,52 @@ public class Creneau {
 
     @ManyToMany
     private Set<Etudiant> etudiants;
+
+    public int getCreaneau() {
+        return Creaneau;
+    }
+
+    public void setCreaneau(int creaneau) {
+        Creaneau = creaneau;
+    }
+
+    public LocalDateTime getDebut() {
+        return debut;
+    }
+
+    public void setDebut(LocalDateTime debut) {
+        this.debut = debut;
+    }
+
+    public LocalDateTime getFin() {
+        return fin;
+    }
+
+    public void setFin(LocalDateTime fin) {
+        this.fin = fin;
+    }
+
+    public Salle getSalle() {
+        return salle;
+    }
+
+    public void setSalle(Salle salle) {
+        this.salle = salle;
+    }
+
+    public Groupe getGroupe() {
+        return groupe;
+    }
+
+    public void setGroupe(Groupe groupe) {
+        this.groupe = groupe;
+    }
+
+    public Set<Etudiant> getEtudiants() {
+        return etudiants;
+    }
+
+    public void setEtudiants(Set<Etudiant> etudiants) {
+        this.etudiants = etudiants;
+    }
 }
