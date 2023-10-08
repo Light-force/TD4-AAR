@@ -27,7 +27,7 @@ import java.util.Properties;
 // On ajoute EnableTransactionManagement
 @EnableWebMvc
     @Configuration
-    @ComponentScan(basePackages = {"controllers"})
+    @ComponentScan(basePackages = {"controllers", "services"})
 @EnableTransactionManagement
     public class ClientWebConfig implements WebMvcConfigurer {
 
@@ -79,11 +79,10 @@ import java.util.Properties;
     @Bean
     public DataSource dataSource() {
         EmbeddedDatabaseBuilder builder = new EmbeddedDatabaseBuilder();
-        EmbeddedDatabase db = builder
+        return builder
                 .setType(EmbeddedDatabaseType.H2) //.H2 or .DERBY
 //                .addScript("db/sql/create-db.sql")   // dans resources
                 .build();
-        return db;
     }
 
     @Bean
