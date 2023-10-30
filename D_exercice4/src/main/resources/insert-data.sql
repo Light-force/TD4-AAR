@@ -1,0 +1,7 @@
+INSERT INTO CATEGORIE VALUES (1,'Legume'),(2,'Fruit'),(3,'Feculent');
+
+INSERT INTO PRODUIT VALUES (1,'Salade',5,30,1),(2,'Courgette',7,23,1),(3,'Banane',10,14,2),(4,'Riz',3,68,3);
+
+INSERT INTO VENTE VALUES (1,'2019-08-29','2019-09-05'),(2,'2019-07-27','2019-08-03');
+
+INSERT INTO LIGNEVENTE VALUES (1,6,1,1),(2,3,2,1),(3,5,4,1),(4,3,2,2),(5,2,4,2);

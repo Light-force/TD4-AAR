@@ -14,7 +14,22 @@
         <module name="exemple4" />
         <module name="exercice1" />
         <module name="exemple5" />
+        <module name="D_exercice4" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="D_Exercice4" target="17" />
+      <module name="exercice3 (1)" target="14" />
+      <module name="exercice3 (2)" target="14" />
+      <module name="exercice4" target="14" />
+      <module name="exercice4 (1)" target="14" />
+      <module name="exercice4 (2)" target="14" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="D_Exercice4" options="-parameters" />
+      <module name="D_exercice4" options="" />
+    </option>
   </component>
 </project>

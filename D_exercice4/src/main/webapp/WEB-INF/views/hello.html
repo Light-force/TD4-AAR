@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+Visiblement, le projet se lance...
+
+<h1>FindById</h1>
+<span th:text="${FindById.nomProduit}"></span>
+<h1>PlusGrosseVenteQuantite</h1>
+<span th:text="${PlusGrosseVenteQuantite.nomProduit}"></span>
+<h1>PLusGrosseVenteMontant</h1>
+<span th:text="${PLusGrosseVenteMontant.nomProduit}"></span>
+<h1>StockSous</h1>
+<ul>
+    <li th:each="produit : ${StockSous}" th:text="${produit.nomProduit}"></li>
+</ul>
+<h1>ventesDe</h1>
+<ul>
+    <li th:each="vente : ${ventesDe}" th:text="${vente.idVente}"></li>
+</ul>
+
+</body>
+</html>
